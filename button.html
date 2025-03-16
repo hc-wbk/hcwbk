@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>button-style</title>
+    <style>
+      .SUBSCRIBE-button {
+        background-color: rgb(168, 15, 15);
+        color: white;
+        border: none;
+        width: 110px;
+        height: 36px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 20px;
+        transition: background-color 0.15s;
+      }
+      .SUBSCRIBE-button:hover{
+        background-color: rgb(117, 22, 22);
+        opacity: 1;
+      }
+      .SUBSCRIBE-button:active{
+        background-color: rgb(43, 6, 6);
+      }
+
+      .JOIN-button {
+        background-color: white;
+        color: rgb(56, 178, 227);
+        border-color: rgb(56, 178, 227);
+        border-width: 1px;
+        width: 70px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 2px;
+        border-style: solid;
+        cursor: pointer;
+        margin-right: 20px;
+        transition: background-color 1s,color 1s;
+      }
+      .JOIN-button:hover{
+        background-color: rgb(56, 178, 227);
+        color: white;
+        transition: opacity 0.2s;
+      }
+      .JOIN-button:active{
+        opacity: 0.5;
+      }
+
+      .TWITTER-button{
+        background-color: rgb(0, 170, 255);
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        border: none;
+        width: 80px;
+        height: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-left: 8px;
+        transition: box-shadow 0.8s;
+      }
+      .TWITTER-button:hover{
+        box-shadow: 2px 5px 10px rgba(1,0,0,0.5);
+      }
+      .TWITTER-button:active{
+        color:aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="SUBSCRIBE-button">SUBSCRIBE</button>
+    <button class="JOIN-button">JOIN</button>
+    <button class="TWITTER-button">Twitter</button>
+  </body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .thumbnail{
+        width: 100%;
+        object-fit: contain;
+        border: 2px;
+        border-color: gray;
+        border-style: solid;
+        border-radius: 10px;
+      }
+
+      .video-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+      }
+
+      .search-bar{
+        display: block;
+        font-size: 22px;
+        margin-left: 20px;
+        border-radius: 15px;
+        width: 300px;
+        border: none;
+        padding: 5px;
+        margin: 10px;
+        box-shadow: 5px 4px 10px rgb(142, 142, 142);
+      }
+
+      .video-author,.video-status{
+        display: block;
+        margin: 0;
+        font-size: 13px;
+      }
+
+      .video-prev{
+        vertical-align: top;
+      }
+
+      .video-info-grid{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+      }
+
+      .video-title{
+        margin-bottom: 8px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      
+      .channel-picture{
+        vertical-align: top;
+        background-color: gray;
+      }
+
+      .video-info{
+        background-color: gray;
+      }
+
+      .profile-picture{
+        width: 70%;
+        border-radius: 100%;
+      }
+
+      .thumbnail-row{
+        margin-bottom: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <input class="search-bar" type="text" placeholder="search">
+    <div class="video-grid">
+      <div class="video-prev">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="photos/p1.avif">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="photos/arthor.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title"> 
+              HTML & CSS Full Course - Beginner to Pro
+            </p>
+            <p class="video-author">
+              SuperSimpleDev
+            </p>
+            <p class="video-status">
+              1417万次观看 &#183; 3年前
+            </p>
+          </div>  
+        </div>
+      </div>
+      <div class="video-prev">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="photos/p2.avif">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="photos/arthor2.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title"> 
+              HTML & CSS Full Course - Beginner to Pro
+            </p>
+            <p class="video-author">
+              SuperSimpleDev
+            </p>
+            <p class="video-status">
+              1417万次观看 &#183; 3年前
+            </p>
+          </div>  
+        </div>
+      </div>
+      <div class="video-prev">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="photos/p1.avif">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="photos/arthor.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title"> 
+              HTML & CSS Full Course - Beginner to Pro
+            </p>
+            <p class="video-author">
+              SuperSimpleDev
+            </p>
+            <p class="video-status">
+              1417万次观看 &#183; 3年前
+            </p>
+          </div>  
+        </div>
+      </div>
+      <div class="video-prev">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="photos/p1.avif">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="photos/arthor.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title"> 
+              HTML & CSS Full Course - Beginner to Pro
+            </p>
+            <p class="video-author">
+              SuperSimpleDev
+            </p>
+            <p class="video-status">
+              1417万次观看 &#183; 3年前
+            </p>
+          </div>  
+        </div>
+      </div>
+      <div class="video-prev">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="photos/p2.avif">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="photos/arthor2.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title"> 
+              HTML & CSS Full Course - Beginner to Pro
+            </p>
+            <p class="video-author">
+              SuperSimpleDev
+            </p>
+            <p class="video-status">
+              1417万次观看 &#183; 3年前
+            </p>
+          </div>  
+        </div>
+      </div>
+      <div class="video-prev">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="photos/p1.avif">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="photos/arthor.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title"> 
+              HTML & CSS Full Course - Beginner to Pro
+            </p>
+            <p class="video-author">
+              SuperSimpleDev
+            </p>
+            <p class="video-status">
+              1417万次观看 &#183; 3年前
+            </p>
+          </div>  
+        </div>
+      </div>
+    </div> 
+  </body>
+</html>

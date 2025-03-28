@@ -5,87 +5,77 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style>
-      p {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-      .thumbnail{
-        width: 100%;
-        object-fit: contain;
-        border: 2px;
-        border-color: gray;
-        border-style: solid;
-        border-radius: 10px;
-      }
-
-      .video-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 20px;
-        row-gap: 40px;
-      }
-
-      .search-bar{
-        display: block;
-        font-size: 22px;
-        margin-left: 20px;
-        border-radius: 15px;
-        width: 300px;
-        border: none;
-        padding: 5px;
-        margin: 10px;
-        box-shadow: 5px 4px 10px rgb(142, 142, 142);
-      }
-
-      .video-author,.video-status{
-        display: block;
-        margin: 0;
-        font-size: 13px;
-      }
-
-      .video-prev{
-        vertical-align: top;
-      }
-
-      .video-info-grid{
-        display: grid;
-        grid-template-columns: 1fr 4fr;
-      }
-
-      .video-title{
-        margin-bottom: 8px;
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-size: 14px;
-      }
-      
-      .channel-picture{
-        vertical-align: top;
-        background-color: gray;
-      }
-
-      .video-info{
-        background-color: gray;
-      }
-
-      .profile-picture{
-        width: 70%;
-        border-radius: 100%;
-      }
-
-      .thumbnail-row{
-        margin-bottom: 10px;
-      }
-
-    </style>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/siderbar.css">
   </head>
   <body>
-    <input class="search-bar" type="text" placeholder="search">
+    <div class="header">
+      <div class="left-section">
+        <img class="hamburger-button" src="photos/icons/hamberger-button.svg">
+        <img class="youtubeicon" src="photos/icons/youtubeicon.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="searchp" src="photos/icons/search-button.svg">
+          <div class="tooltip">
+            search
+          </div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-searchp" src="photos/icons/voice-search-bar.svg">
+        </button>
+      </div>
+      <div class="right-section">
+        <button class="upload-button">
+          <img class="uploadp" src="photos/icons/update.svg">
+        </button>
+        <button class="news-button">
+          <img class="newsp" src="photos/icons/news.svg">
+          <div class="notifiction-count">
+            5
+          </div>
+        </button>
+        <button class="user-button">
+          <img class="userp" src="photos/user.jpg">
+        </button>
+      </div>
+    </div>
+    <div class="sider">
+      <div class="siderbar-link">
+        <img src="photos/sider/1.svg">
+        <div>home</div>
+      </div>
+      <div class="siderbar-link">
+        <img src="photos/sider/2.svg">
+        <div>short video</div>
+      </div>
+      <div class="siderbar-link">
+        <img src="photos/sider/3.svg">
+        <div>video</div>
+      </div>
+      <div class="siderbar-link">
+        <img src="photos/sider/4.svg">
+        <div>history</div>
+      </div>
+      <div class="siderbar-link">
+        <img src="photos/sider/5.svg">
+        <div>setting</div>
+      </div>
+      <div class="siderbar-link">
+        <img src="photos/sider/6.svg">
+        <div>help</div>
+      </div>
+    </div>
     <div class="video-grid">
       <div class="video-prev">
         <div class="thumbnail-row">
           <img class="thumbnail" src="photos/p1.avif">
+          <div class="video-time">
+            5:00
+          </div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -210,5 +200,6 @@
         </div>
       </div>
     </div> 
+    <a href="grid.html">click</a>
   </body>
 </html>

@@ -1,0 +1,16 @@
+.header {
+  background-color: rgb(28, 79, 75);
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+  font-family: "Delius", cursive;;
+  font-size: 30px;
+  font-weight: bolder;
+}
